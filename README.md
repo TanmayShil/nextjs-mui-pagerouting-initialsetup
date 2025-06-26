@@ -6,6 +6,8 @@ This is a basic starter project using **Next.js**, **TypeScript**, and **Materia
 
 ## 📁 Project Structure
 
+<pre><code>```
+  
 my-nextjs-app/
 ├── pages/ # Next.js pages for routing
 │ ├── index.tsx # Home page
@@ -23,7 +25,7 @@ my-nextjs-app/
 ├── next.config.js # Next.js config
 └── README.md # Project documentation
 
-
+```</code></pre>
 
 ---
 
