@@ -167,3 +167,39 @@ export default function ProductDetail() {
 }
 ```
 
+---
+
+## 💻 Run the App Locally
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+## 📦 Build for Production
+
+```bash
+npm run build
+npm start
+```
+
+---
+
+## 🧪 Available Scripts
+
+```bash
+"scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint"
+}
+```
+
+---
+
+## 🙋‍♂️ Author
+Made with ❤️ by Tanmay Shil
+GitHub: @TanmayShil
