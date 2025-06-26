@@ -9,19 +9,19 @@ This is a basic starter project using **Next.js**, **TypeScript**, and **Materia
 my-nextjs-app/
 ├── pages/ # Next.js pages for routing
 │ ├── index.tsx # Home page
-| ├── product/
-|     ├── index.tsx # Product page
-|     └── [id].tsx # Product Id page
-│ └── about.tsx # Example route page
+│ ├── about.tsx # Example route page
+│ └── product/ # Product-related routes
+│ ├── index.tsx # Product list page
+│ └── [id].tsx # Dynamic product details page
 ├── mui-theme/ # Custom MUI theme setup
-│ ├── _muiPalette.ts
-| ├── _muiTheme.ts
-│ └── MuiThemeProvider.tsx
-├── public/ # Static assets
-├── styles/ # Global styles
+│ ├── _muiPalette.ts # Theme color logic
+│ ├── _muiTheme.ts # Complete theme config
+│ └── MuiThemeProvider.tsx # Theme provider component
+├── public/ # Static assets (favicon, images, etc.)
+├── styles/ # Global styles (optional)
 ├── tsconfig.json # TypeScript config
 ├── next.config.js # Next.js config
-└── README.md
+└── README.md # Project documentation
 
 
 
@@ -46,7 +46,7 @@ cd my-nextjs-app
 # 2. Install Material UI and Emotion
 npm install @mui/material @emotion/react @emotion/styled
 
-# 3. Create theme files (see below)
+```
 
 ## 🎨 Custom Material UI Theme Setup
 
