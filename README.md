@@ -202,5 +202,5 @@ npm start
 
 ## 🙋‍♂️ Author
 
-- Made with ❤️ by Tanmay Shil
--GitHub: [@TanmayShil](https://github.com/TanmayShil)
+Made with ❤️ by Tanmay Shil
+GitHub: [@TanmayShil](https://github.com/TanmayShil)
