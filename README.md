@@ -127,7 +127,7 @@ export default function App({ Component, pageProps }: AppProps) {
 ## 🧭 Page Routing Overview
 
 ---
-
+<pre><code>```
 ## Static Routes
 
 File	                      Route
@@ -139,4 +139,22 @@ pages/about.tsx	            /about
 File	                       Route	            Description
 pages/product/index.tsx	    /product	          Product list page
 pages/product/[id].tsx	    /product/123	      Product details by ID
+
+```</code></pre>
+
+---
+
+## Example: pages/product/[id].tsx
+
+```bash
+import { useRouter } from "next/router";
+import { Typography } from "@mui/material";
+
+export default function ProductDetail() {
+  const { query } = useRouter();
+  const { id } = query;
+
+  return <Typography variant="h4">Product ID: {id}</Typography>;
+}
+```
 
