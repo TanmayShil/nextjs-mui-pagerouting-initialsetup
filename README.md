@@ -123,3 +123,17 @@ export default function App({ Component, pageProps }: AppProps) {
 }
 
 ```
+
+## 🧭 Page Routing Overview
+
+---
+
+Static Routes
+File	Route
+pages/index.tsx	/
+pages/about.tsx	/about
+
+Nested + Dynamic Routes
+File	Route	Description
+pages/product/index.tsx	/product	Product list page
+pages/product/[id].tsx	/product/123	Product details by ID
