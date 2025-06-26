@@ -52,4 +52,24 @@ npm install @mui/material @emotion/react @emotion/styled
 
 ## 🎨 Custom Material UI Theme Setup
 
-1. mui-theme/muiPalette.ts
+1. mui-theme/_muiPalette.ts
+  ```bash
+ import { PaletteMode, PaletteOptions } from "@mui/material";
+
+const getMuiPalette = (mode: PaletteMode): PaletteOptions => ({
+  mode,
+  ...(mode === "light"
+    ? {
+        primary: { main: "#1976d2" },
+        secondary: { main: "#9c27b0" },
+        background: { default: "#f5f5f5" },
+      }
+    : {
+        primary: { main: "#90caf9" },
+        secondary: { main: "#ce93d8" },
+        background: { default: "#121212" },
+      }),
+});
+
+export default getMuiPalette;
+```
