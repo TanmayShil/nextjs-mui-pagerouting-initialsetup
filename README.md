@@ -73,3 +73,53 @@ const getMuiPalette = (mode: PaletteMode): PaletteOptions => ({
 
 export default getMuiPalette;
 ```
+
+ 2. mui-theme/_muiTheme.ts
+```bash
+
+import { createTheme } from "@mui/material/styles";
+import getMuiPalette from "./_muiPalette";
+
+const theme = createTheme({
+  palette: getMuiPalette("light"), // Change to "dark" if needed
+});
+
+export default theme;
+
+```
+ 3. mui-theme/MuiThemeProvider.tsx
+```bash
+
+import { ThemeProvider, CssBaseline } from "@mui/material";
+import theme from "./_muiTheme";
+import { ReactNode } from "react";
+
+export default function MuiThemeProvider({ children }: { children: ReactNode }) {
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      {children}
+    </ThemeProvider>
+  );
+}
+
+```
+
+
+## _app.tsx Setup
+
+```bash
+
+// pages/_app.tsx
+import type { AppProps } from "next/app";
+import MuiThemeProvider from "@/mui-theme/MuiThemeProvider";
+
+export default function App({ Component, pageProps }: AppProps) {
+  return (
+    <MuiThemeProvider>
+      <Component {...pageProps} />
+    </MuiThemeProvider>
+  );
+}
+
+```
