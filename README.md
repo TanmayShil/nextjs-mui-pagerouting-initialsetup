@@ -6,7 +6,7 @@ This is a basic starter project using **Next.js**, **TypeScript**, and **Materia
 
 ## 📁 Project Structure
 
-<pre><code>```
+<pre><code>
   
 my-nextjs-app/
 ├── pages/ # Next.js pages for routing
@@ -25,7 +25,7 @@ my-nextjs-app/
 ├── next.config.js # Next.js config
 └── README.md # Project documentation
 
-```</code></pre>
+</code></pre>
 
 ---
 
@@ -127,20 +127,20 @@ export default function App({ Component, pageProps }: AppProps) {
 ## 🧭 Page Routing Overview
 
 ---
-<pre><code>```
+<pre><code>
 ## Static Routes
 
-File	                      Route
-pages/index.tsx	            /
-pages/about.tsx	            /about
+File	                        Route
+pages/index.tsx	                /
+pages/about.tsx	                /about
 
 ## Nested + Dynamic Routes
 
-File	                       Route	            Description
-pages/product/index.tsx	    /product	          Product list page
-pages/product/[id].tsx	    /product/123	      Product details by ID
+File	                         Route	                Description
+pages/product/index.tsx	        /product	              Product list page
+pages/product/[id].tsx	        /product/123	          Product details by ID
 
-```</code></pre>
+</code></pre>
 
 ---
 
