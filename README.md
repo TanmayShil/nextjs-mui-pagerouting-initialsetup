@@ -128,12 +128,15 @@ export default function App({ Component, pageProps }: AppProps) {
 
 ---
 
-Static Routes
-File	Route
-pages/index.tsx	/
-pages/about.tsx	/about
+## Static Routes
 
-Nested + Dynamic Routes
-File	Route	Description
-pages/product/index.tsx	/product	Product list page
-pages/product/[id].tsx	/product/123	Product details by ID
+File	                      Route
+pages/index.tsx	            /
+pages/about.tsx	            /about
+
+## Nested + Dynamic Routes
+
+File	                       Route	            Description
+pages/product/index.tsx	    /product	          Product list page
+pages/product/[id].tsx	    /product/123	      Product details by ID
+
