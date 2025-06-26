@@ -137,7 +137,7 @@ pages/about.tsx	                /about
 ## Nested + Dynamic Routes
 
 File	                         Route	                Description
-pages/product/index.tsx	        /product	              Product list page
+pages/product/index.tsx	        /product	             Product list page
 pages/product/[id].tsx	        /product/123	          Product details by ID
 
 </code></pre>
